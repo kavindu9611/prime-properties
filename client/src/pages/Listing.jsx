@@ -82,7 +82,7 @@ export default function Listing() {
           )}
           <div className="flex flex-col max-w-4xl gap-4 p-3 mx-auto my-7">
             <p className="text-2xl font-semibold">
-              {listing.name} - ${" "}
+              {listing.name} - LKR{" "}
               {listing.offer
                 ? listing.discountPrice.toLocaleString("en-US")
                 : listing.regularPrice.toLocaleString("en-US")}
@@ -98,7 +98,7 @@ export default function Listing() {
               </p>
               {listing.offer && (
                 <p className="bg-green-900 w-full max-w-[200px] text-white text-center p-1 rounded-md">
-                  ${+listing.regularPrice - +listing.discountPrice}
+                  LKR {+listing.regularPrice - +listing.discountPrice}
                 </p>
               )}
             </div>
